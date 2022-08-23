@@ -12,9 +12,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 	public static void main(String[] args) {
 		// 获取容器
-		ApplicationContext ac =new AnnotationConfigApplicationContext(MyConfig.class);
+		ApplicationContext ac = new AnnotationConfigApplicationContext(MyConfig.class);
 		// 获取 bean
-		MyUser user = (MyUser) ac.getBean("qmyUser");
+		MyUser user = (MyUser) ac.getBean("myUser");
 		System.out.println(user.toString());
 	}
 }
