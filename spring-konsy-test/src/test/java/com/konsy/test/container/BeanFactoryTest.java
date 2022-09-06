@@ -1,9 +1,8 @@
-package com.konsy.test;
+package com.konsy.test.container;
 
-import com.konsy.test.model.MyTestBean;
+import com.konsy.test.container.model.MyTestBean;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 
@@ -16,7 +15,7 @@ public class BeanFactoryTest {
 	@Test
 	public void testSimpleLoad() {
 		// load bean from xml
-		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml"));
+		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("container/beanFactoryTest.xml"));
 		MyTestBean bean = (MyTestBean) bf.getBean("myTestBean");
 		System.out.println("test:"+"testStr".equals(bean.getTestStr()));
 	}

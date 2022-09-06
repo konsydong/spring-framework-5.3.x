@@ -1,4 +1,4 @@
-package com.konsy.test.model;
+package com.konsy.test.container.model;
 
 /**
  * @author : konsy

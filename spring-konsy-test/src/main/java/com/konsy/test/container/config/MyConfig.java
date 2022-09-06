@@ -1,6 +1,6 @@
-package com.konsy.test.config;
+package com.konsy.test.container.config;
 
-import com.konsy.test.model.MyUser;
+import com.konsy.test.container.model.MyUser;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,7 +1,7 @@
 package com.konsy.test;
 
-import com.konsy.test.config.MyConfig;
-import com.konsy.test.model.MyUser;
+import com.konsy.test.container.config.MyConfig;
+import com.konsy.test.container.model.MyUser;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
