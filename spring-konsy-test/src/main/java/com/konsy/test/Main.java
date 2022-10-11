@@ -2,6 +2,7 @@ package com.konsy.test;
 
 import com.konsy.test.container.config.MyConfig;
 import com.konsy.test.container.model.MyUser;
+import com.konsy.test.factorybean.bean.Car;
 import com.konsy.test.lookup.bean.GetBeanTest;
 import com.konsy.test.replacemethod.bean.TestChangeMethod;
 import org.springframework.context.ApplicationContext;
@@ -24,15 +25,21 @@ public class Main {
 
 	// lookup main
 //	public static void main(String[] args) {
-//		ApplicationContext bf = new ClassPathXmlApplicationContext("lookup/lookupTest.xml");
+//		ApplicationContext bf = new ClassPathXmlApplicationContext("lookup/FactoryBeanTest.xml");
 //		GetBeanTest test = (GetBeanTest) bf.getBean("getBeanTest");
 //		test.showMe();
 //	}
 
 	// replace method
+//	public static void main(String[] args) {
+//		ApplicationContext bf = new ClassPathXmlApplicationContext("replacemethod/replaceMethodTest.xml");
+//		TestChangeMethod test = (TestChangeMethod) bf.getBean("testChangeMethod");
+//		test.changeMe();
+//	}
+
+	// beanfactory method
 	public static void main(String[] args) {
-		ApplicationContext bf = new ClassPathXmlApplicationContext("replacemethod/replaceMethodTest.xml");
-		TestChangeMethod test = (TestChangeMethod) bf.getBean("testChangeMethod");
-		test.changeMe();
+		ApplicationContext bf = new ClassPathXmlApplicationContext("factorybean/FactoryBeanTest.xml");
+		Car car = (Car) bf.getBean("car");
 	}
 }
