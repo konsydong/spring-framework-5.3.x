@@ -1,6 +1,6 @@
-package com.konsy.test.proxy.service.impl;
+package com.konsy.test.proxy.jdk.service.impl;
 
-import com.konsy.test.proxy.service.UserService;
+import com.konsy.test.proxy.jdk.service.UserService;
 
 /**
  * @author : konsy

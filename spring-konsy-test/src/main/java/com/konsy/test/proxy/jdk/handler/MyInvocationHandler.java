@@ -1,4 +1,4 @@
-package com.konsy.test.proxy.handler;
+package com.konsy.test.proxy.jdk.handler;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

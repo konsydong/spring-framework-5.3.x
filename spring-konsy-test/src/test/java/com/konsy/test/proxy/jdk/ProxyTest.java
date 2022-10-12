@@ -1,8 +1,8 @@
-package com.konsy.test.proxy;
+package com.konsy.test.proxy.jdk;
 
-import com.konsy.test.proxy.handler.MyInvocationHandler;
-import com.konsy.test.proxy.service.UserService;
-import com.konsy.test.proxy.service.impl.UserServiceImpl;
+import com.konsy.test.proxy.jdk.handler.MyInvocationHandler;
+import com.konsy.test.proxy.jdk.service.UserService;
+import com.konsy.test.proxy.jdk.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 
 /**
