@@ -1,5 +1,6 @@
 package com.konsy.test;
 
+import com.konsy.test.applicationevent.bean.TestEvent;
 import com.konsy.test.container.config.MyConfig;
 import com.konsy.test.container.model.MyUser;
 import com.konsy.test.factorybean.bean.Car;
@@ -38,8 +39,15 @@ public class Main {
 //	}
 
 	// beanfactory method
+//	public static void main(String[] args) {
+//		ApplicationContext bf = new ClassPathXmlApplicationContext("factorybean/FactoryBeanTest.xml");
+//		Car car = (Car) bf.getBean("car");
+//	}
+
+	// applicationevent method
 	public static void main(String[] args) {
-		ApplicationContext bf = new ClassPathXmlApplicationContext("factorybean/FactoryBeanTest.xml");
-		Car car = (Car) bf.getBean("car");
+		ApplicationContext bf = new ClassPathXmlApplicationContext("applicationevent/ApplicationEventTest.xml");
+		TestEvent testEvent = new TestEvent("hello", "msg");
+		bf.publishEvent(testEvent);
 	}
 }
